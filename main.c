@@ -17,7 +17,7 @@ int main(void)
 {
 	
 	u8 second = 30;
-    u16 delay;
+        u16 delay;
 	u8 but1_pushed = 0;
 	u8 but2_pushed = 0;
 	u8 but3_pushed = 0;
