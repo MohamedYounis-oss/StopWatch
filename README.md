@@ -1,7 +1,7 @@
 # StopWatch
 simple stop watch using atmega32 microcontroller
 
-Default value for the stop watch is 30 seconds
+Default value for the stop watch is 30 seconds,
 maximum valu is 99 seconds
 
 IN this project you can:
