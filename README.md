@@ -8,4 +8,4 @@ IN this project you can:
 - Pause and resume the cowntdown (button1)
 - reset the program  (button2)
 - Getting it into the calibration mode (button3)
-- And by using button 4 you can switch betwen the two digits to increase or decrease each one.
+- And by using button 4 you can switch betwen the two digits to increase or decrease each one using butt1 and butt2.
