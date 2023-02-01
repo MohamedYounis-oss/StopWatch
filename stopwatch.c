@@ -15,17 +15,20 @@ u8 second_delay = 2;
 
 const unsigned char segment_numbers[10] = {0x3f, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0xFF, 0x6F};
 	
-void my_delay_ms(u16 n){
+void my_delay_ms(u16 n)
+{
 	
-	while(n--){
+	while(n--)
+	{
 		_delay_ms(1);
 	}
-	
 }
-	
+
+
 void multi_seg_display(u8 num){
 	
-	if (num > 99){
+	if (num > 99)
+	{
 		return;
 	}
 	
@@ -41,19 +44,17 @@ void multi_seg_display(u8 num){
 	SET_BIT(SEG_CTRL_PORT, COM1_PIN);		
 	CLEAR_BIT(SEG_CTRL_PORT, COM2_PIN);	
 	SEG_PORT = segment_numbers[y]<<1;
-	my_delay_ms(second_delay);
-	
+	my_delay_ms(second_delay);	
 }
 
 
 void buzzer(void)
 {
-	
-	for (u8 buz=0; buz<2; buz++){
+	for (u8 buz=0; buz<2; buz++)
+	{
 		SET_BIT(PORTC, 5);
 		_delay_ms(150);
 		CLEAR_BIT(PORTC, 5);
 		_delay_ms(150);
 	}
-	
 }
