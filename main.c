@@ -43,13 +43,10 @@ int main(void)
 	
     while (1) 
     {
-		
-
-						
-		for(delay = 0; delay<250; delay++){
-			
+								
+		for(delay = 0; delay<250; delay++)
+		{
 			multi_seg_display(second);	
-			
 			
 			// Pause button || increase button
 			if (GET_BIT(BUTTONS_PIN, BUT1_PIN) == 0)
